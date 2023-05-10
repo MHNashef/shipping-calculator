@@ -1,0 +1,33 @@
+.text-wrapper {
+  margin-top: 150px;
+  font-family: sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 60px;
+  color: #2c2d3c;
+}
+
+.btns-wrapper {
+  margin-top: 5em;
+}
+
+.btns-wrapper button {
+  height: 70px;
+  width: 360px;
+  border-radius: 10px;
+  border-style: none;
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+#get-quote-btn {
+  margin-right: 10px;
+  background-color: #2c2d3c;
+  color: #fff;
+}
+
+#track-shipment-btn {
+  margin-left: 10px;
+  background-color: #dcdfe1;
+  color: #2c2d3c;
+}

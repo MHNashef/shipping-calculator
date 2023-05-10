@@ -9,7 +9,10 @@ export default function Navbar() {
 
   return (
     <Toolbar>
-      <Grid sx={{ placeItems: "center" }} container>
+      <Grid
+        sx={{ placeItems: "center", borderBottom: "1px solid #E0E0E0" }}
+        container
+      >
         <Grid item xs={2}>
           {/* to-do: replace with SBQ logo */}
           <Typography sx={{ fontSize: "18px", color: "#828282" }}>
