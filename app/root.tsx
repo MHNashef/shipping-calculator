@@ -8,10 +8,21 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import Navbar from "./components/Navbar";
+import navbarStyles from "~/styles/Navbar.css";
 
-export const links: LinksFunction = () => [
-  ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
-];
+// export const links: LinksFunction = () => [
+//   ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
+// ];
+
+export const links: LinksFunction = () => {
+  return [
+    {
+      rel: "stylesheet",
+      href: navbarStyles
+    }
+  ]
+};
 
 export default function App() {
   return (
@@ -23,6 +34,9 @@ export default function App() {
         <Links />
       </head>
       <body>
+        <header>
+          <Navbar />
+        </header>
         <Outlet />
         <ScrollRestoration />
         <Scripts />
