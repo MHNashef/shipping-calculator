@@ -102,6 +102,26 @@ export default function Index() {
         </Grid>
       </Grid>
       <hr />
+      <Grid container direction="column" alignItems="center">
+        <Grid item>
+          <h2 className="for-your-business">
+            <span>For</span> Your Business
+          </h2>
+        </Grid>
+        <Grid item>
+          <p className="your-bussines-paragraph">
+            Trans-SBQ is a rapidly growing organization focused on
+            transportation and logistics. We believe the possibilities are
+            endless. Trans-SBQ currently specializes in hauling steel bars,
+            billets and coils with the capacity to haul other cargo across the
+            country.
+          </p>
+        </Grid>
+        <Grid item>
+          <button className="get-started-btn">Get Started</button>
+        </Grid>
+      </Grid>
+      <hr />
     </>
   );
 }
