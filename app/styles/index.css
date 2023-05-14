@@ -31,3 +31,39 @@
   background-color: #dcdfe1;
   color: #2c2d3c;
 }
+
+.why-choose-us {
+  margin: 0;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 60px;
+  color: #2c2d3c;
+}
+
+.why-choose-us span {
+  color: #a9b0bc;
+}
+
+.reasons-list {
+  counter-reset: count;
+  margin-right: 30px;
+}
+
+.reasons-list li {
+  counter-increment: count;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #2c2d3c;
+}
+
+.reasons-list li::marker {
+  content: "0" counter(count, decimal) ".   ";
+}
+
+.reasons-list li p {
+  font-family: sans-serif;
+  font-size: 12px;
+  color: #757982;
+  margin: 12px 0 20px 0;
+}
