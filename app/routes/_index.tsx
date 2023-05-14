@@ -1,9 +1,10 @@
-import { Box, Button, Grid, Typography } from "@mui/material";
+import { Box, Button, Grid } from "@mui/material";
 import type { LinksFunction, V2_MetaFunction } from "@remix-run/node";
 import ChatBubbleIcon from "@mui/icons-material/ChatBubbleOutline";
 
 import styles from "~/styles/index.css";
 import styled from "@emotion/styled";
+import ServiceCard from "~/components/ServiceCard";
 
 export const meta: V2_MetaFunction = () => {
   return [{ title: "SBQ - Home" }];
@@ -32,9 +33,9 @@ const TalkToUsBtn = styled(Button)({
 export default function Index() {
   return (
     <>
-      <Grid container>
+      <Grid container sx={{height: "700px" }}>
         <Grid item xs={2}></Grid>
-        <Grid item xs={8} sx={{ textAlign: "center", height: "100vh" }}>
+        <Grid item xs={8} sx={{ textAlign: "center"}}>
           <Box className="text-wrapper">
             Trans-SBQ Serves Its Customers With Efficient And Quality
             Transportation And Logistics Services
@@ -122,6 +123,24 @@ export default function Index() {
         </Grid>
       </Grid>
       <hr />
+      <Grid container direction="column" alignItems="center">
+        <Grid item>
+          <h2>
+            <span>Explore Our</span> Services
+          </h2>
+        </Grid>
+        <Grid item>
+          <Box className="services-cards-wrapper">
+            <ServiceCard serviceName="Service (A)" />
+            <ServiceCard serviceName="Service (B)" />
+            <ServiceCard serviceName="Service (C)" />
+            <ServiceCard serviceName="Service (D)" />
+          </Box>
+        </Grid>
+        <Grid item>
+          <button className="explore-more-btn">Explore More</button>
+        </Grid>
+      </Grid>
     </>
   );
 }
