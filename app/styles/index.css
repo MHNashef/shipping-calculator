@@ -88,11 +88,12 @@ h2 span {
 }
 
 .get-started-btn,
-.explore-more-btn {
+.explore-more-btn,
+.customers-say-btn {
   border-radius: 10px;
   font-size: 20px;
   font-family: sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   color: #fff;
   background-color: #2c2d3c;
   border-style: none;
@@ -104,9 +105,16 @@ h2 span {
 }
 
 .services-cards-wrapper {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    flex: 1 1 275px;
-    gap: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.testimonials-grid-container {
+  gap: 10px;
+}
+
+.testimonials-grid-container .testimonial-card {
+  margin-top: 40px;
 }

@@ -33,9 +33,9 @@ const TalkToUsBtn = styled(Button)({
 export default function Index() {
   return (
     <>
-      <Grid container sx={{height: "700px" }}>
+      <Grid container sx={{ height: "700px" }}>
         <Grid item xs={2}></Grid>
-        <Grid item xs={8} sx={{ textAlign: "center"}}>
+        <Grid item xs={8} sx={{ textAlign: "center" }}>
           <Box className="text-wrapper">
             Trans-SBQ Serves Its Customers With Efficient And Quality
             Transportation And Logistics Services
@@ -131,16 +131,35 @@ export default function Index() {
         </Grid>
         <Grid item>
           <Box className="services-cards-wrapper">
-            <ServiceCard serviceName="Service (A)" />
-            <ServiceCard serviceName="Service (B)" />
-            <ServiceCard serviceName="Service (C)" />
-            <ServiceCard serviceName="Service (D)" />
+            <ServiceCard serviceName="Service (A)" showFooter={false} />
+            <ServiceCard serviceName="Service (B)" showFooter={false} />
+            <ServiceCard serviceName="Service (C)" showFooter={false} />
+            <ServiceCard serviceName="Service (D)" showFooter={false} />
           </Box>
         </Grid>
         <Grid item>
           <button className="explore-more-btn">Explore More</button>
         </Grid>
       </Grid>
+      <hr />
+      <Grid container>
+        <Grid item xs={1} />
+        <Grid item container direction="column" xs={4}>
+          <Grid item>
+            <h2>
+              <span>Customers Say About</span> Trans-SBQ
+            </h2>
+          </Grid>
+          <Grid item>
+            <button className="customers-say-btn">All Testimonials</button>
+          </Grid>
+        </Grid>
+        <Grid item container xs={7} className="testimonials-grid-container">
+          <ServiceCard serviceName="Customer Name" showFooter={true} className="testimonial-card" />
+          <ServiceCard serviceName="Customer Name" showFooter={true} className="testimonial-card" />
+        </Grid>
+      </Grid>
+      <hr />
     </>
   );
 }
