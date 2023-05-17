@@ -1,0 +1,123 @@
+hr {
+  width: 85%;
+  margin-top: 50px;
+}
+
+.text-wrapper {
+  margin-top: 150px;
+  font-family: sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 60px;
+  color: #2c2d3c;
+}
+
+.btns-wrapper {
+  margin-top: 5em;
+}
+
+.btns-wrapper button {
+  height: 70px;
+  width: 360px;
+  border-radius: 10px;
+  border-style: none;
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+#get-quote-btn {
+  margin-right: 10px;
+  background-color: #2c2d3c;
+  color: #fff;
+}
+
+#track-shipment-btn {
+  margin-left: 10px;
+  background-color: #dcdfe1;
+  color: #2c2d3c;
+}
+
+h2 {
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 60px;
+  color: #2c2d3c;
+  text-transform: capitalize;
+}
+
+h2 span {
+  color: #a9b0bc;
+}
+
+.why-choose-us {
+  margin: 0;
+}
+
+.reasons-list {
+  counter-reset: count;
+  margin-right: 30px;
+}
+
+.reasons-list li {
+  counter-increment: count;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #2c2d3c;
+}
+
+.reasons-list li::marker {
+  content: "0" counter(count, decimal) ".   ";
+}
+
+.reasons-list li p {
+  font-family: sans-serif;
+  font-size: 12px;
+  color: #757982;
+  margin: 12px 0 20px 0;
+}
+
+.your-bussines-paragraph {
+  width: 85%;
+  text-align: center;
+  margin: auto;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 300;
+  color: #757982;
+}
+
+.services-cards-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.testimonials-grid-container {
+  gap: 10px;
+}
+
+.testimonials-grid-container .testimonial-card {
+  margin-top: 40px;
+}
+
+.questions-wrapper {
+  width: 95%;
+  color: "#2c2d3c";
+  font-family: sans-serif;
+  font-size: 20px;
+  margin-top: 45px;
+}
+
+.questions-wrapper div {
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 45px;
+  padding-bottom: 18px;
+}
+
+.questions-wrapper div span {
+  color: #cecece;
+  float: right;
+  margin-right: 10px;
+}
