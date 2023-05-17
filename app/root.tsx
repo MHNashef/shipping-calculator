@@ -9,7 +9,11 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+
 import navbarStyles from "~/styles/Navbar.css";
+import footerStyles from "~/styles/Footer.css";
+import rootStyles from "~/styles/root.css";
 
 // export const links: LinksFunction = () => [
 //   ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
@@ -19,9 +23,17 @@ export const links: LinksFunction = () => {
   return [
     {
       rel: "stylesheet",
-      href: navbarStyles
-    }
-  ]
+      href: navbarStyles,
+    },
+    {
+      rel: "stylesheet",
+      href: footerStyles,
+    },
+    {
+      rel: "stylesheet",
+      href: rootStyles,
+    },
+  ];
 };
 
 export default function App() {
@@ -41,6 +53,7 @@ export default function App() {
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
+        <Footer />
       </body>
     </html>
   );

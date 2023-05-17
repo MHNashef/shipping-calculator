@@ -197,7 +197,6 @@ export default function Index() {
           </Grid>
         </Grid>
       </Grid>
-      <hr />
     </>
   );
 }

@@ -1,0 +1,10 @@
+.footer-details-wrapper {
+  color: #585e6a;
+  margin-top: 65px;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+.footer-details-wrapper div {
+  margin-bottom: 25px;
+}
