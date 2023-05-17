@@ -26,7 +26,6 @@ export default function ServiceCard({
         height: 250,
         boxShadow: "0px 10px 30px rgba(178, 178, 179, 0.15)",
         borderRadius: "10px",
-        border: "1px dotted black",
       }}
     >
       <CardContent>

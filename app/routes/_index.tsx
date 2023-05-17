@@ -155,8 +155,46 @@ export default function Index() {
           </Grid>
         </Grid>
         <Grid item container xs={7} className="testimonials-grid-container">
-          <ServiceCard serviceName="Customer Name" showFooter={true} className="testimonial-card" />
-          <ServiceCard serviceName="Customer Name" showFooter={true} className="testimonial-card" />
+          <ServiceCard
+            serviceName="Customer Name"
+            showFooter={true}
+            className="testimonial-card"
+          />
+          <ServiceCard
+            serviceName="Customer Name"
+            showFooter={true}
+            className="testimonial-card"
+          />
+        </Grid>
+      </Grid>
+      <hr />
+      <Grid container>
+        <Grid item xs={1} />
+        <Grid item container direction="column" xs={7}>
+          <div className="questions-wrapper">
+            <div>
+              Question (A)
+              <span>&#43;</span>
+            </div>
+            <div>
+              Question (B)
+              <span>&#43;</span>
+            </div>
+            <div>
+              Question (C)
+              <span>&#43;</span>
+            </div>
+          </div>
+        </Grid>
+        <Grid item container direction="column" xs={4}>
+          <Grid item>
+            <h2>
+              <span>Getting Started With</span> Trans-SBQ
+            </h2>
+          </Grid>
+          <Grid item>
+            <button className="ask-us-btn">Ask Us</button>
+          </Grid>
         </Grid>
       </Grid>
       <hr />
