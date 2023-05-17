@@ -5,6 +5,8 @@ import ChatBubbleIcon from "@mui/icons-material/ChatBubbleOutline";
 import styles from "~/styles/index.css";
 import styled from "@emotion/styled";
 import ServiceCard from "~/components/ServiceCard";
+import CallToActionBtn from "~/components/CallToActionBtn";
+import actionBtnStyles from "~/styles/CallToActionBtn.css";
 
 export const meta: V2_MetaFunction = () => {
   return [{ title: "SBQ - Home" }];
@@ -15,6 +17,10 @@ export const links: LinksFunction = () => {
     {
       rel: "stylesheet",
       href: styles,
+    },
+    {
+      rel: "stylesheet",
+      href: actionBtnStyles,
     },
   ];
 };
@@ -119,7 +125,7 @@ export default function Index() {
           </p>
         </Grid>
         <Grid item>
-          <button className="get-started-btn">Get Started</button>
+          <CallToActionBtn btnText="Get Started" />
         </Grid>
       </Grid>
       <hr />
@@ -138,7 +144,7 @@ export default function Index() {
           </Box>
         </Grid>
         <Grid item>
-          <button className="explore-more-btn">Explore More</button>
+          <CallToActionBtn btnText="Explore More" />
         </Grid>
       </Grid>
       <hr />
@@ -151,7 +157,7 @@ export default function Index() {
             </h2>
           </Grid>
           <Grid item>
-            <button className="customers-say-btn">All Testimonials</button>
+            <CallToActionBtn btnText="All Testimonials" />
           </Grid>
         </Grid>
         <Grid item container xs={7} className="testimonials-grid-container">
@@ -193,7 +199,7 @@ export default function Index() {
             </h2>
           </Grid>
           <Grid item>
-            <button className="ask-us-btn">Ask Us</button>
+            <CallToActionBtn btnText="Ask Us" />
           </Grid>
         </Grid>
       </Grid>
