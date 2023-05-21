@@ -49,10 +49,12 @@ export default function App() {
         <header>
           <Navbar />
         </header>
-        <Outlet />
-        <ScrollRestoration />
-        <Scripts />
-        <LiveReload />
+        <main>
+          <Outlet />
+          <ScrollRestoration />
+          <Scripts />
+          <LiveReload />
+        </main>
         <Footer />
       </body>
     </html>

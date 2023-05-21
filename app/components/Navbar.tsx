@@ -1,4 +1,3 @@
-import type { LinksFunction } from "@remix-run/node";
 import { Box, Grid, Toolbar, Typography } from "@mui/material";
 import { useState } from "react";
 
