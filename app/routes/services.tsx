@@ -1,7 +1,10 @@
 import type { V2_MetaFunction, LinksFunction } from "@remix-run/node";
 import { Grid } from "@mui/material";
 
+import Form from "~/components/Form";
+
 import styles from "~/styles/services.css";
+import formStyles from "~/styles/Form.css";
 
 export const meta: V2_MetaFunction = () => {
   return [{ title: "SBQ - Services" }];
@@ -12,6 +15,10 @@ export const links: LinksFunction = () => {
     {
       rel: "stylesheet",
       href: styles,
+    },
+    {
+      rel: "stylesheet",
+      href: formStyles,
     },
   ];
 };
@@ -35,7 +42,9 @@ export default function Services() {
             Reliable Delivery.
           </p>
         </Grid>
-        <Grid item xs={5} />
+        <Grid item xs={5}>
+          <Form />
+        </Grid>
       </Grid>
       <Grid
         container
