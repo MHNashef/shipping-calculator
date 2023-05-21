@@ -19,7 +19,10 @@ export const links: LinksFunction = () => {
 export default function Services() {
   return (
     <>
-      <Grid container sx={{ fontFamily: "sans-serif", color: "#2C2D3C", marginTop: "130px"}}>
+      <Grid
+        container
+        sx={{ fontFamily: "sans-serif", color: "#2C2D3C", marginTop: "130px" }}
+      >
         <Grid item xs={1} />
         <Grid item xs={6}>
           <h1 className="header-title">
@@ -34,14 +37,20 @@ export default function Services() {
         </Grid>
         <Grid item xs={5} />
       </Grid>
-      <Grid container sx={{marginTop: "250px"}}>
-        <Grid item xs={5} />
+      <Grid
+        container
+        sx={{ marginTop: "250px", placeItems: "center" }}
+        justifyContent="center"
+      >
+        <Grid item xs={5} sx={{ marginLeft: "30px" }}>
+          <img src="https://placehold.co/400x300" alt="placeholder image`" />
+        </Grid>
         <Grid item xs={6}>
-          <h2 style={{fontFamily: "sans-serif", fontSize: "30px", color: "#2C2D3C"}}>
+          <h2 className="benefits-title">
             By using our Trans-SBQ Platform FBA Sellers Can Take Advantage Of
             The Following Benefits:
           </h2>
-          <ul style={{fontFamily: "sans-serif", fontSize: "18px", color: "#828282"}}>
+          <ul className="benefits-list">
             <li>
               Lower shipping cost and increase security with consolidated
               freight.
