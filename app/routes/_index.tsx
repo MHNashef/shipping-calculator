@@ -7,6 +7,7 @@ import styled from "@emotion/styled";
 import ServiceCard from "~/components/ServiceCard";
 import CallToActionBtn from "~/components/CallToActionBtn";
 import actionBtnStyles from "~/styles/CallToActionBtn.css";
+import { Link } from "@remix-run/react";
 
 export const meta: V2_MetaFunction = () => {
   return [{ title: "SBQ - Home" }];
@@ -47,7 +48,9 @@ export default function Index() {
             Transportation And Logistics Services
           </Box>
           <Box className="btns-wrapper">
-            <button id="get-quote-btn">Get A Quote</button>
+            <Link to="/services">
+              <button id="get-quote-btn">Get A Quote</button>
+            </Link>
             <button id="track-shipment-btn">Track A Shipment</button>
           </Box>
         </Grid>

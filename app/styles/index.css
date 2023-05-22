@@ -3,6 +3,10 @@ hr {
   margin-top: 50px;
 }
 
+button {
+  cursor: pointer;
+}
+
 .text-wrapper {
   margin-top: 150px;
   font-family: sans-serif;
